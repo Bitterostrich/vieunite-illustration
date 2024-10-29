@@ -149,7 +149,7 @@ useEffect(() => {
 
 export default function Home() {
   const [loading, setLoading] = useState<number>(20)
-  const container = useRef<HTMLDivElement>(null)
+
 
     useEffect(() => {
       const interval = setInterval(() => {
