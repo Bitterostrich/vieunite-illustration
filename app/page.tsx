@@ -51,7 +51,7 @@ export const Loader: React.FC<{loading: number}> = ({loading}) => {
         { opacity: 0, y: 0, duration: 1.5, delay: 0.2, ease: 'power3.out' }
       );
   
-      // Animation for the image
+      // Animation for the percentage
       gsap.fromTo(
         percentageRef.current,
         { opacity: 0, scale: 0.8 },
