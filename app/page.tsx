@@ -27,7 +27,7 @@ interface ICardComponent  {
 
 
 
-export const Loader: React.FC<{loading: number}> = ({loading}) => {
+ const Loader: React.FC<{loading: number}> = ({loading}) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const titleRef = useRef<HTMLDivElement>(null);
   const percentageRef = useRef<HTMLDivElement>(null);
@@ -70,8 +70,7 @@ export const Loader: React.FC<{loading: number}> = ({loading}) => {
       </div>
 )
 }
-
-export const CardComponent: React.FC<ICardComponent> = (props)=> {
+const CardComponent: React.FC<ICardComponent> = (props)=> {
 
   const { data } = props
   return (
@@ -89,7 +88,7 @@ export const CardComponent: React.FC<ICardComponent> = (props)=> {
   )
 }
 
-export const VieuniteDemo:React.FC<{loading: number}> = ({loading}) => {
+const VieuniteDemo:React.FC<{loading: number}> = ({loading}) => {
   
 const containerRef = useRef<HTMLDivElement>(null)
 const titleRef = useRef<HTMLHeadingElement>(null);
