@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Chakra_Petch, Saira } from "next/font/google";
+import { Inter} from "next/font/google";
 import "./globals.scss";
 
 const inter = Inter({ subsets: ["latin"] });
